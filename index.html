@@ -20,8 +20,8 @@
           >Email<input id="email-label" placeholder="Enter Your Email"
         /></lable>
         <lable for="number-label" name="number" type="number"
-          >Age(optional)<input id="number-label" placeholder="Age"
-        /></lable>
+          >Age(optional)<input id="number-label" placeholder="Age" />
+        </lable>
         <label for="dropdown"
           >Which option best describes your current role?
           <select id="dropdown" name="dropdown">
@@ -35,9 +35,37 @@
         </label>
       </fieldset>
       <fieldset>
-        <lable>
-          <input />
-        </lable>
+        <label for="radio-group-title">Would you recommend freeCodeCamp to a friend?</label>
+        <label for="user-definitely"
+          ><input
+            id="user-definitely"
+            type="radio"
+            name="recommend-type"
+            value="definitely"
+            class="inline"
+          />
+          Definitely</label
+        >
+        <label for="user-maybe"
+          ><input
+            id="user-maybe"
+            type="radio"
+            name="recommend-type"
+            value="maybe"
+            class="inline"
+          />
+          Maybe</label
+        >
+        <label for="user-not-sure"
+          ><input
+            id="user-not-sure"
+            type="radio"
+            name="recommend-type"
+            value="not-sure"
+            class="inline"
+          />
+          Not sure</label
+        >
       </fieldset>
     </form>
   </body>
