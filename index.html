@@ -13,15 +13,29 @@
     <p>Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form">
       <fieldset>
-        <lable for="name-label" name="name" type="text" required
-          >Name<input id="name-label" placeholder="Enter Your Name"
-        /></lable>
-        <lable for="email-label" name="email" type="email" required
-          >Email<input id="email-label" placeholder="Enter Your Email"
-        /></lable>
-        <lable for="number-label" name="number" type="number"
-          >Age(optional)<input id="number-label" placeholder="Age" />
-        </lable>
+        <label id="name-label" for="name" name="name"
+          >Name<input
+            id="name"
+            placeholder="Enter Your Name"
+            type="text"
+            required
+        /></label>
+        <label id="email-label" for="email" name="email"
+          >Email<input
+            id="email"
+            placeholder="Enter Your Email"
+            type="email"
+            required
+        /></label>
+        <label id="number-label" for="number" name="number"
+          >Age(optional)<input
+            id="number"
+            placeholder="Age"
+            type="number"
+            min="13"
+            max="120"
+          />
+        </label>
         <label for="dropdown"
           >Which option best describes your current role?
           <select id="dropdown" name="dropdown">
