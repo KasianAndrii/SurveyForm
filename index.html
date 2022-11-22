@@ -98,7 +98,10 @@
           <label for="flags-group-title"
             >What would you like to see improved? (Check all that apply)</label
           >
-          <label for="front-end-projects" name="front-end-projects"
+          <label
+            for="front-end-projects"
+            name="front-end-projects"
+            class="label-checkbox"
             >Front-end Projects
             <input
               id="front-end-projects"
@@ -109,7 +112,10 @@
               class="inline"
             />
           </label>
-          <label for="back-end-projects" name="back-end-projects"
+          <label
+            for="back-end-projects"
+            name="back-end-projects"
+            class="label-checkbox"
             >Back-end Projects
             <input
               id="back-end-projects"
@@ -120,7 +126,10 @@
               class="inline"
             />
           </label>
-          <label for="data-visualization" name="data-visualization"
+          <label
+            for="data-visualization"
+            name="data-visualization"
+            class="label-checkbox"
             >Data Visualization
             <input
               id="data-visualization"
@@ -131,7 +140,7 @@
               class="inline"
             />
           </label>
-          <label for="challenges" name="challenges"
+          <label for="challenges" name="challenges" class="label-checkbox"
             >Challenges
             <input
               id="challenges"
@@ -142,7 +151,10 @@
               class="inline"
             />
           </label>
-          <label for="open-source-community" name="open-source-community"
+          <label
+            for="open-source-community"
+            name="open-source-community"
+            class="label-checkbox"
             >Open Source Community
             <input
               id="open-source-community"
@@ -153,7 +165,10 @@
               class="inline"
             />
           </label>
-          <label for="gitter-help-rooms" name="gitter-help-rooms"
+          <label
+            for="gitter-help-rooms"
+            name="gitter-help-rooms"
+            class="label-checkbox"
             >Gitter help rooms
             <input
               id="gitter-help-rooms"
@@ -164,7 +179,7 @@
               class="inline"
             />
           </label>
-          <label for="videos" name="videos"
+          <label for="videos" name="videos" class="label-checkbox"
             >Videos
             <input
               id="videos"
@@ -175,7 +190,7 @@
               class="inline"
             />
           </label>
-          <label for="city-meetups" name="city-meetups"
+          <label for="city-meetups" name="city-meetups" class="label-checkbox"
             >City Meetups
             <input
               id="city-meetups"
@@ -186,7 +201,7 @@
               class="inline"
             />
           </label>
-          <label for="wiki" name="wiki"
+          <label for="wiki" name="wiki" class="label-checkbox"
             >Wiki
             <input
               id="wiki"
@@ -197,7 +212,7 @@
               class="inline"
             />
           </label>
-          <label for="forum" name="forum"
+          <label for="forum" name="forum" class="label-checkbox"
             >Forum
             <input
               id="forum"
@@ -208,9 +223,11 @@
               class="inline"
             />
           </label>
-          <label for="additional-courses" name="additional-courses"
-            >Additional Courses
-            <input
+          <label
+            for="additional-courses"
+            name="additional-courses"
+            class="label-checkbox"
+            >Additional Courses<input
               id="additional-courses"
               type="checkbox"
               required
@@ -219,18 +236,18 @@
               class="inline"
             />
           </label>
-          <label for="comment"
-            >Any comments or suggestions?
-            <textarea
-              id="comment"
-              name="comment"
-              rows="3"
-              cols="30"
-              placeholder="Enter your comment here..."
-            ></textarea>
-          </label>
         </fieldset>
-        <input id="submit" type="submit" value="submit" />
+        <label for="comment"
+          >Any comments or suggestions?
+          <textarea
+            id="comment"
+            name="comment"
+            rows="3"
+            cols="30"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </label>
+        <input id="submit" type="submit" value="submit" class="submit" />
       </form>
     </section>
   </body>
