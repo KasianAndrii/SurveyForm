@@ -1,40 +1,149 @@
-body {
-  width: 100%;
-  height: 100vh;
+/* poppins-regular - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/poppins-v20-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/poppins-v20-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/poppins-v20-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/poppins-v20-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/poppins-v20-latin-regular.svg#Poppins") format("svg"); /* Legacy iOS */
+}
+/* poppins-italic - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-italic.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/poppins-v20-latin-italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/poppins-v20-latin-italic.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/poppins-v20-latin-italic.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/poppins-v20-latin-italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/poppins-v20-latin-italic.svg#Poppins") format("svg"); /* Legacy iOS */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
   margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  line-height: 1.4;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #f5f6f7;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: linear-gradient(
       115deg,
       rgba(58, 58, 158, 0.8),
       rgba(136, 136, 206, 0.7)
     ),
     url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #f5f6f7;
-  font-family: Tahoma;
-  font-size: 16px;
 }
 
 h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
 p {
   margin: 1em auto;
   text-align: center;
 }
 
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 40px;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.2),
+      rgba(136, 136, 206, 0.1)
+    );
+}
+
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 36px;
+}
+
+p{
+  margin: 0px 0px 48px 0px;
+  font-weight: 300;
+  font-size: 20px;
+  font-style: italic;
+}
+
 form {
-  width: 60vw;
-  max-width: 500px;
+  max-width: 800px;
   min-width: 300px;
   margin: 0 auto;
-  padding: 2.5rem;
+  padding: 46px 40px;
   background-color: rgba(27, 27, 50, 0.8);
   border-radius: 4px;
 }
 
 fieldset {
   border: none;
-  padding: 2rem 0;
-  border-bottom: 3px solid #3b3b4f;
+  margin-bottom: 20px;
+  /* border-bottom: 3px solid #3b3b4f; */
 }
 
 fieldset:last-of-type {
@@ -43,27 +152,40 @@ fieldset:last-of-type {
 
 label {
   display: block;
-  margin: 0.5rem 0;
+  margin: 8px 0;
 }
 
 input,
 textarea,
 select {
   margin: 10px 0 20px 0;
+  padding: 10px;
   width: 100%;
   min-height: 2em;
   border-radius: 4px;
-}
-
-input,
-textarea {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   background-color: #ffffff;
   border: 1px solid #0a0a23;
   color: #495057;
 }
 
+/* input,
+textarea {
+  background-color: #ffffff;
+  border: 1px solid #0a0a23;
+  color: #495057;
+} */
+
 .inline {
   width: unset;
   margin: 0 0.5em 0 0;
   vertical-align: middle;
+}
+
+#submit{
+  background-color: #37af65;
+  color: #ffffff;
+  text-transform: uppercase;
 }
